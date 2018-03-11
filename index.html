@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Simple Web</title>
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.css">
+  </head>
+  <body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <a class="navbar-brand" href="#">Home</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <form class="form-inline my-2 my-lg-0">
+            <input id="input_city" type="search" placeholder="Search Contect" aria-label="Search">
+            <button class="btn btn-success">Search</button>
+          </form>
+        </div>
+      </nav>
+  </header>
+
+  <div class="container" id="data1">
+    <h1 class="display-4">Hello World</h1>
+    <p class="lead">this is just a simple page of mine</p>
+    <hr class="my-4">
+    <p>if you want to know more about me</p>
+    <p class="lead">
+      <a class="btn btn-primary btn-lg" href="#" role="button">Click here</a>
+    </p>
+  </div>
+
+  <div class="container" id="data2">
+    <h1 class="display-4">Let me introduce myself</h1>
+    <p class="lead">im a student of hacktiv8 in Jakarta, im starting to learn programming because it's fun</p>
+    <hr class="my-4">
+    <p>you can visit the hacktiv8 website for more information</p>
+    <p class="lead">
+      <a class="btn btn-primary btn-lg" href="#" role="button">Click here</a>
+    </p>
+  </div>
+
+  <div class="container" id="data3">
+    <h1 class="display-4">Your future developer</h1>
+    <p class="lead">as a new player in programming world, i need to do more practice to improve my skill</p>
+    <hr class="my-4">
+    <p>you can visit Bootstrap page</p>
+    <p class="lead">
+      <a class="btn btn-primary btn-lg" href="#" role="button">Click here</a>
+    </p>
+  </div>
+
+
+
+  <nav aria-label="...">
+    <div class="container">
+      <ul class="pagination pagination-lg">
+        <li class="page-item_one"><a class="page-link_one">1</a></li>
+        <li class="page-item_two"><a class="page-link">2</a></li>
+        <li class="page-item_three"><a class="page-link">3</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script>
+
+    $('#data1').show()
+    $('#data2').hide()
+    $('#data3').hide()
+
+
+    $('.page-item_one').click(function () {
+      $('#data1').show()
+      $('#data2').hide()
+      $('#data3').hide()
+    })
+
+    $('.page-item_two').click(function () {
+      $('#data1').hide()
+      $('#data2').show()
+      $('#data3').hide()
+    })
+
+    $('.page-item_three').click(function () {
+      $('#data1').hide()
+      $('#data2').hide()
+      $('#data3').show()
+    })
+
+    </script>
+  </body>
+</html>
